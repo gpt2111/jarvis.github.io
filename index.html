@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="main">
-      <div id="header">
-        <div class="control">
-          <!-- <div class="logo">
-            <img src="./assets/img/logo.svg" alt="#">
-          </div> -->
-          <ul id="nav">
-            <li><a href="" class="nav-items">My Chelsea</a></li>
-            <li><a href="" class="nav-items">First team</a></li>
-            <li><a href="" class="nav-items">Manager</a></li>
-            <li><a href="" class="nav-items">Legend</a></li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="main">
+    <!-- BEGIN: HEADER -->
+    <div id="header">
+      <!-- BEGIN: CONTROL -->
+      <div class="control">
+        <img class="logo" src="./assets/img/logo.svg" alt="#">
+        <!-- BEGIN: NAV -->
+        <ul id="nav">
+          <li><a href="#mychelsea" class="nav-items">My Chelsea</a></li>
+          <li><a href="#firstteam" class="nav-items">First team</a></li>
+          <li><a href="#manager" class="nav-items">Manager</a></li>
+          <li><a href="legend" class="nav-items">Legend</a></li>
+        </ul>
+        <!-- END: NAV -->
+        <div class="option">
+          <select name="language" id="">
+            <option value="lang">Language</option>
+            <option value="">Vietnamese</option>
+            <option value="">English</option>
+          </select>
+          <div class="sign">
+            <a href="#" class="sign-items">Login</a>
+            <a href="#" class="sign-items">Sign Up</a>
+          </div>
         </div>
       </div>
-
-      <div id="silder">
-
-      </div>
-
-      <div id="content">
-
-      </div>
-
-      <div id="footer">
-        
-      </div>
+      <!-- END: CONTROL -->
     </div>
-  </body>
+    <!-- END: HEADER -->
+    <div id="slider">
+      <div class="slides">
+        <!-- BEGIN: RADIO BUTTON -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- END: RADIO BUTTON -->
+        <!-- BEGIN: SLIDE IMAGES -->
+        <div class="slide first">
+          <img src="./assets/img/background1.jpg" class="image" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/background2.jpg" class="image" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/background3.jpg" class="image" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/background4.jpg" class="image" alt="">
+        </div>
+        <!-- END: SLIDE IMAGES -->
+        <!-- BEGIN: AUTOMATIC NAV -->
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!-- END: AUTOMATIC NAV -->
+      </div>
+      <!-- BEGIN: MANUAL NAV -->
+      <div class="nav-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!-- END: MANUAL NAV -->
+    </div>
+
+    <div id="content">
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+  </div>
+</body>
+
 </html>
