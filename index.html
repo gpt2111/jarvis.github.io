@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+  <title>CHELSEA FC</title>
 </head>
 
 <body>
@@ -40,49 +41,59 @@
       <!-- END: CONTROL -->
     </div>
     <!-- END: HEADER -->
-    <div id="slider">
-      <div class="slides">
-        <!-- BEGIN: RADIO BUTTON -->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <!-- END: RADIO BUTTON -->
-        <!-- BEGIN: SLIDE IMAGES -->
-        <div class="slide first">
-          <img src="./assets/img/background1.jpg" class="image" alt="">
+    <!-- Begin: Slider -->
+      <div id="slider" class="st-slider">
+        <input type="radio" class="cs_anchor radio" name="radio-btn" id="slider1">
+        <input type="radio" class="cs_anchor radio" name="radio-btn" id="slider2">
+        <input type="radio" class="cs_anchor radio" name="radio-btn" id="slider3">
+        <input type="radio" class="cs_anchor radio" name="radio-btn" id="slider4">
+        <div class="images">
+          <div class="images-inner">
+            <div class="image-slide">
+              <div class="image bkgr_logo" style="background-image: url(./assets/img/background1.jpg);"></div>
+            </div>
+            <div class="image-slide">
+              <div class="image stadium" style="background-image: url(./assets/img/background2.jpg);"></div>
+            </div>
+            <div class="image-slide">
+              <div class="image drogba" style="background-image: url(./assets/img/background3.jpg);"></div>
+            </div>
+            <div class="image-slide">
+              <div class="image UCL20" style="background-image: url(./assets/img/background4.jpg);"></div>
+            </div>
+          </div>
         </div>
-        <div class="slide">
-          <img src="./assets/img/background2.jpg" class="image" alt="">
-        </div>
-        <div class="slide">
-          <img src="./assets/img/background3.jpg" class="image" alt="">
-        </div>
-        <div class="slide">
-          <img src="./assets/img/background4.jpg" class="image" alt="">
-        </div>
-        <!-- END: SLIDE IMAGES -->
-        <!-- BEGIN: AUTOMATIC NAV -->
-        <div class="nav-auto">
+        <div class="navigation-auto">
           <div class="auto-btn1"></div>
           <div class="auto-btn2"></div>
           <div class="auto-btn3"></div>
           <div class="auto-btn4"></div>
         </div>
-        <!-- END: AUTOMATIC NAV -->
+        <div class="navigation-manual">
+          <label for="slider1" class="manual-btn"></label>
+          <label for="slider2" class="manual-btn"></label>
+          <label for="slider3" class="manual-btn"></label>
+          <label for="slider4" class="manual-btn"></label>
+        </div>
+        
       </div>
-      <!-- BEGIN: MANUAL NAV -->
-      <div class="nav-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div>
-      <!-- END: MANUAL NAV -->
-    </div>
+     <script src="./JS/main.js"></script>
+    <!-- End: Slider -->
 
     <div id="content">
-
+      <div id="squad">
+        <div class="role">First Team</div>
+        <div class="team-position">
+          <div class="position">Goalkeepers</div>
+          <div class="player">
+            <img src="./assets/img/kepa.png" alt="">
+          </div>
+          <div class="player-info">
+            <div class="player-number">1</div>
+            <div class="player-name">Kepa Arrizabalaga</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="footer">
