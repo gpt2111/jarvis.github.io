@@ -124,7 +124,7 @@ select:hover {
 }
 
 /*------------------------ END: HEADER -------------------------------*/
-
+/* ---------------SLIDER START--------------------- */
 #slider{
   padding-top: 75px;
 }
@@ -238,13 +238,214 @@ select:hover {
   background: #fff;
 }
 
-#content {
+/* ----- ---SLIDER END-------------------------- */
+/* ---------FIRST TEAM START-------------------- */
 
+
+.roler{
+  font-size: 30px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #000;
+  margin-left: 5em;
+  font-weight: bold;
+}
+
+.roler::after{
+  content: " ";
+  height: 3px;
+  width: 15%;
+  background-color: #11468F;
+  display: block;
+}
+
+.team-position{
+  width: 847px;
+  height: 253px;
+  margin-left: 15em;
+  position: relative;
+}
+
+.position{
+  font-weight: bold;
+  font-size: 1.25em;
+  border-bottom: solid rgb(216, 216, 216) 1px;
+  color: #000;
+}
+
+.player{
+  width: 200px;
+  height: 200px;
+  background-color: #3C4048;
+  border-radius: 10px;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.container{
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.container:hover{
+  cursor: pointer;
 }
 
 .player img{
   width: 250px;
-  height: 250px;
+  transition: 1s;
+}
+
+.player-info{
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+}
+
+.player-number{
+  font-size: 15px;
+  color: #fff;
+}
+
+.player-number::after{
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 20px;
+  background-color: #fff;
+  transition: 1s;
+}
+
+.player-name{
+  width: 50%;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.player:hover .player-img{
+  transform: scale(1.1);
+}
+
+.player:hover .player-number::after{
+  width: 40px;
+}
+
+
+#james{
+  left: 5%;
+}
+
+#silva{
+  left: 30%;
+}
+
+#koulibaly{
+  left: 55%;
+}
+
+#chilwell{
+  left: 80%;
+}
+
+#cheek,
+#mount{
+  left: 10%;
+}
+
+#jorginho,
+#sterling{
+  left: 42%;
+}
+
+#kovacic,
+#kai{
+  left: 73%;
+}
+
+#manager{
+  color: #fff;
+}
+
+.manager-visual{
+  background-color: #787A91;
+  display: flex;
+  height: 100vh;
+}
+
+.role{
+  padding-bottom: 1.5em;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 150px;
+  padding-top: 38px;
+  color: #fff;
+}
+
+.role::after{
+  content: " ";
+  display: block;
+  height: 3px;
+  width: 144px;
+  background-color: #11468F;
+}
+
+.role-name{
+  font-size: 1.6em;
+  width: 70%;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 150px;
+  padding-top: 5px;
+}
+
+
+.visual-message{
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+  padding-left: 150px;
+  padding-top: 5px;
+  color: #fff;
+}
+
+.visual-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.visual-image {
+  display: flex;
+  align-self: flex-end;
+}
+
+.manager-visual-items{
+  flex-basis: 30%;
+}
+
+.visual-history{
+  font-size: 1.2em;
+  padding-top: 7em;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.matches,.wins,.trophies{
+  margin-bottom: 2em;
+}
+
+.about{
+  color: #000;
+}
+
+.grid{
+  display: grid;
+  color: #000;
+  grid-template-columns: 100px 120px 140px;
+  gap: 50px 50px;
 }
 
 #footer {}
