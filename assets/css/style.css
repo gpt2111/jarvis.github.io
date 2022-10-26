@@ -8,7 +8,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-weight: 500px;
+  font-weight: bold;
   box-sizing: inherit;
 }
 
@@ -50,6 +50,7 @@ main{
   justify-content: space-between;
   top: 0;
   width: 100%;
+  font-weight: bold;
 }
 
 #nav {
@@ -280,6 +281,7 @@ select:hover {
   border-radius: 10px;
   margin: 1em;
   overflow: hidden;
+  position: relative;
 }
 
 .container{
@@ -312,7 +314,7 @@ select:hover {
 .player-number::after{
   content: " ";
   display: block;
-  height: 1px;
+  height: 2px;
   width: 20px;
   background-color: #fff;
   transition: 1s;
@@ -333,46 +335,24 @@ select:hover {
   width: 40px;
 }
 
-
-#james{
-  left: 5%;
-}
-
-#silva{
-  left: 30%;
-}
-
-#koulibaly{
-  left: 55%;
-}
-
-#chilwell{
-  left: 80%;
-}
-
-#cheek,
-#mount{
+.player-info{
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  width: 50%;
+  bottom: 10%;
   left: 10%;
 }
 
-#jorginho,
-#sterling{
-  left: 42%;
-}
-
-#kovacic,
-#kai{
-  left: 73%;
-}
 
 #manager{
   color: #fff;
 }
 
 .manager-visual{
-  background-color: #787A91;
+  background-color: #191970;
   display: flex;
-  height: 100vh;
+  height: 105vh;
 }
 
 .role{
@@ -422,7 +402,7 @@ select:hover {
 }
 
 .manager-visual-items{
-  flex-basis: 30%;
+  flex-basis: 45%;
 }
 
 .visual-history{
@@ -433,7 +413,11 @@ select:hover {
   font-weight: bold;
 }
 
-.matches,.wins,.trophies{
+.games,
+.wins,
+.defeats,
+.goals-scored,
+.goals-conceded{
   margin-bottom: 2em;
 }
 
@@ -444,8 +428,157 @@ select:hover {
 .grid{
   display: grid;
   color: #000;
-  grid-template-columns: 100px 120px 140px;
-  gap: 50px 50px;
+  grid-template-columns: 150px 150px 150px;
+  gap: 10px 80px;
 }
 
-#footer {}
+.bio-info{
+  border-bottom: gray solid 1px;
+}
+
+.biography{
+  width: 60%;
+  margin: 3em auto;
+  color: #000;
+}
+
+.bio{
+  text-transform: capitalize;
+}
+
+.bio-title{
+  color: gray;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.bio-text{
+  text-transform: none;
+  margin: 16px 0;
+}
+
+.info-nationality img{
+  width: 30px;
+  position: relative;
+  top: 0.5em;
+}
+
+.info-title{
+  font-size: 0.75em;
+  color: gray;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.info-position,.info-date,.info-joined,.info-firstmatch{
+  margin: 16px 0;
+}
+
+.info-date,
+.info-joined,
+.info-firstmatch{
+  font-size: 1.3em;
+  color: darkblue;
+}
+
+.match{
+  font-size: 13px;
+}
+
+#legend{
+  background-color: #191970;
+  margin: 0;
+  overflow: hidden;
+}
+
+#legend .role{
+
+}
+
+#legend .role::after{
+  width: 130px;
+}
+
+.sub-button{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.btn-image{
+  width: 100%;
+  transition: 1s;
+}
+
+.btn{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(78, 73, 73);
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+}
+
+.btn-name{
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  width: 50%;
+  z-index: 1;
+  bottom: 0;
+  left: 10%;
+  color: #fff;
+}
+
+.btn-name::before{
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #fff;
+  transition: 1s;
+}
+
+.btn:hover .btn-image{
+  transform: scale(1.1);
+}
+
+.btn:hover .btn-name::before{
+  width: 50px;
+}
+
+.sponsors{
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.sponsors img{
+  width: 100px;
+  margin: 0 1em;
+}
+
+footer{
+  position: relative;
+}
+
+footer{
+  bottom: -50px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+footer .social-media{
+  position: absolute;
+  display: flex;
+  bottom: 30%;
+  right: 5%;
+}
+
+.social-media a img{
+  width: 50px;
+  margin-right: 10px;
+}
